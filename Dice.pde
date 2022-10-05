@@ -97,7 +97,7 @@ void resultGraph(int ylev) {
     fill(0);
     rect(100 + i*40, ylev - counts[i-1]*15, 35, counts[i-1]*15); //graph bars
     stroke(255);
-    strokeWeight(2);
+    strokeWeight(1);
     fill(255);
     textSize(10);
     text(counts[i-1], 100 + i*40 + 35/2, ylev - counts[i-1]*15 + 10); //bar counts
