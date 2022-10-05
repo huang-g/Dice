@@ -95,16 +95,17 @@ void resultGraph(int ylev) {
   for(int i = 1; i <= 6; i++) {
     noStroke();
     fill(0);
-    rect(100 + i*40, ylev - counts[i-1]*15, 35, counts[i-1]*15); //graph bars
+    rect(100 + i*40, ylev - counts[i-1]*15, 35, counts[i-1]*15);//bars
     stroke(255);
-    strokeWeight(1);
+    strokeWeight(2);
     fill(255);
     textSize(10);
-    text(counts[i-1], 100 + i*40 + 35/2, ylev - counts[i-1]*15 + 10); //bar counts
+    if(counts[i-1] != 0)
+      text(counts[i-1], 100 + i*40 + 35/2, ylev - counts[i-1]*15 + 10);//bar counts
     stroke(0);
     fill(0);
     textSize(14);
-    text(i, 100 + i*40 + 35/2, ylev+15); //bar labels
+    text(i, 100 + i*40 + 35/2, ylev+15);//bar labels
   }
 }
 
